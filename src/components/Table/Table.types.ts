@@ -1,5 +1,5 @@
 export interface ITableProps {
-  columns: { [key: string]: string }[];
+  columns: { [key: string]: string | boolean | any }[]; // TODO fix type
   rows: { [key: string]: string | number }[];
   columnDefaultConfig?: ColumnDefConfig;
   tableConfig: TableConfig;

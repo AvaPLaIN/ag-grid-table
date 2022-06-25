@@ -1,20 +1,24 @@
 import Table from "./components/Table";
 
 const rows = [
-  { make: "Toyota", model: "Celica", price: 35000 },
-  { make: "Toyota", model: "Testi", price: 31000 },
-  { make: "Ford", model: "Mondeo", price: 32000 },
-  { make: "Porsche", model: "Boxster", price: 72000 },
+  { group: "Demon Slayer", title: "Demon Slayer", released: 2010 },
+  { group: "Demon Slayer", title: "Demon Slayer 2", released: 2015 },
+  { group: "Naruto", title: "Naruto", released: 2020 },
+  { group: "One Piece", title: "One Piece", released: 2022 },
 ];
 
-const columns = [{ field: "make" }, { field: "model" }, { field: "price" }];
+const columns = [
+  { field: "group", rowGroup: true, hide: true },
+  { field: "title" },
+  { field: "released" },
+];
 
 const columnDefaultConfig = {
   sortable: true,
   filter: true,
   resizable: true,
   floatingFilter: true,
-  enableRowGroup: true, // only enterprise
+  enableRowGroup: true,
 };
 
 const tableConfig = {
@@ -23,7 +27,7 @@ const tableConfig = {
   rowGroupPanelShow: "always",
   sideBar: "filters",
   pagination: true,
-  paginationPageSize: 2,
+  paginationPageSize: 10,
 };
 
 function App() {

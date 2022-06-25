@@ -11,7 +11,7 @@ const Table = ({
   tableConfig,
 }: ITableProps) => {
   return (
-    <div className="ag-theme-alpine" style={{ height: 400, width: 600 }}>
+    <div className="ag-theme-alpine" style={{ height: 600, width: 1000 }}>
       <AgGridReact
         rowData={rows}
         columnDefs={columns}
