@@ -17,7 +17,6 @@ const columnDefaultConfig = {
   sortable: true,
   filter: true,
   resizable: true,
-  floatingFilter: true,
   enableRowGroup: true,
 };
 
