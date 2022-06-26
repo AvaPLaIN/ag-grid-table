@@ -10,6 +10,11 @@ const Table = ({
   columnDefaultConfig,
   tableConfig,
 }: ITableProps) => {
+  const handleOnCellValueChanged = (e: any) => {
+    console.log(e.data);
+    // update(e.data.id, e.data)
+  };
+
   return (
     <div className="ag-theme-alpine" style={{ height: 600, width: 1000 }}>
       <AgGridReact
@@ -17,6 +22,7 @@ const Table = ({
         columnDefs={columns}
         defaultColDef={columnDefaultConfig}
         {...tableConfig}
+        onCellValueChanged={handleOnCellValueChanged}
       />
     </div>
   );

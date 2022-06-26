@@ -5,10 +5,10 @@ export const tableConfig = {
     { field: "released" },
   ],
   rows: [
-    { group: "Demon Slayer", title: "Demon Slayer", released: 2010 },
-    { group: "Demon Slayer", title: "Demon Slayer 2", released: 2015 },
-    { group: "Naruto", title: "Naruto", released: 2020 },
-    { group: "One Piece", title: "One Piece", released: 2022 },
+    { id: "1", group: "Demon Slayer", title: "Demon Slayer", released: 2010 },
+    { id: "2", group: "Demon Slayer", title: "Demon Slayer 2", released: 2015 },
+    { id: "3", group: "Naruto", title: "Naruto", released: 2020 },
+    { id: "4", group: "One Piece", title: "One Piece", released: 2022 },
   ],
   columnDefaultConfig: {
     sortable: true,
