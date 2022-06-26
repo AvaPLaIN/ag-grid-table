@@ -11,6 +11,7 @@ type ColumnDefConfig = {
   resizable?: boolean;
   floatingFilter?: boolean;
   enableRowGroup?: boolean;
+  editable?: boolean;
 };
 
 type TableConfig = {
